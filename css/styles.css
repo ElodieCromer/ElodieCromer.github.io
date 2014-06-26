@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slide1 {
+	margin: 0 auto;
+   background: red center 0 no-repeat fixed;
+   height: 600px;
+}
+
+#slide2 {
+	margin: 0 auto;
+   background: blue center 0 no-repeat fixed;
+   height: 600px;
+}
+
+#slide3 {
+	margin: 0 auto;
+   background: yellow center 0 no-repeat fixed;
+   height: 600px;
+}
+
+#slide4 {
+	margin: 0 auto;
+   background: black center 0 no-repeat fixed;
+   height: 600px;
+	
+}

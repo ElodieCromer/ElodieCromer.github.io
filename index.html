@@ -1,11 +1,77 @@
 <!doctype html>
-<html>
+<!--[if lte IE 6]> <html class="no-js ie6 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<title>Accueil</title>
+	<meta charset="UTF-8">
+	<title>Portfolio Elodie Cromer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/styles.css" media="all">
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#slide1').parallax("50%", 0.1);
+	$('#slide2').parallax("50%", 0.1);
+	$('#slide3').parallax("50%", 0.4);
+	$('#slide4').parallax("50%", 0.3);
+
+})
+</script>
+
 </head>
 
 <body>
-<h1>Hello World</h1>
+<header>
+
+	<nav class="main-navigation">
+		<ul id="nav">
+			<li><a href="#slide1" title="Next Section">Home</a></li>
+		    <li><a href="#slide2" title="Next Section">Réalisations</a></li>
+		    <li><a href="#slide3" title="Next Section">A propos</a></li>
+		    <li><a href="#slide4" title="Next Section">Contact</a></li>
+		</ul>
+
+	</nav>
+
+
+</header>
+
+<div id="main">
+	<div id="slide1">
+		<div class="slide_inside">
+			
+		</div>
+	</div>
+	<div id="slide2">
+		<div class="slide_inside">
+		</div>
+	</div>
+	<div id="slide3">
+		<div class="slide_inside">
+		</div>
+	</div>
+	<div id="slide4">
+		<div class="slide_inside">
+		</div>
+	</div>
+</div>
+
+
+<footer>
+
+
+</footer>
+
+
+
 </body>
 </html>
