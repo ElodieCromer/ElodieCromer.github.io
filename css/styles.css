@@ -1,6 +1,123 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* ----------------------------- */
+/* ==reset */
+/* ----------------------------- */
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+  background: url('../img/repeatingbg.jpg');
+  font-size: 62.5%;
+}
+
+body {
+  background: url('../img/topbg.jpg') repeat-x;
+  color: #000;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0.75em 0 0;
+}
+/* soft reset */
+html,
+body,
+textarea,
+figure,
+label {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  padding-left: 2em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* avoid top margins on first content element */
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* max values */
+img, table, td, blockquote, code, pre, textarea, input, video {
+  max-width: 100%;
+}
+/* pictures */
+img {
+  height: auto;
+  vertical-align: middle;
+}
+
+a img{
+  border:none;
+}
+
+/* switching box model for all elements */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
 #slide1 {
 	margin: 0 auto;
    background: red center 0 no-repeat fixed;
@@ -21,7 +138,12 @@
 
 #slide4 {
 	margin: 0 auto;
-   background: black center 0 no-repeat fixed;
+   background: green center 0 no-repeat fixed;
    height: 600px;
 	
 }
+
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
