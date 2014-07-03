@@ -69,7 +69,6 @@ li ol {
 
 img, table, td, blockquote, code, pre, textarea, input, video {
   max-width: 100%;
-  text-decoration: none;
 }
 
 img {
@@ -165,7 +164,7 @@ footer {
    margin : 0.5% 0 0.5% 7%;
  }
 
- a {
+ a{
   text-decoration: none;
    }
 
@@ -200,11 +199,6 @@ footer {
    color: #252324;
    float: right;
 }
-
-
- 
-
-
 
 /* ----------------------------- */
 /* PAGE 1 - SLIDER (une partie de celui-ci a été élaboré par BluePrint - Slider Jquery)*/
@@ -413,87 +407,41 @@ footer {
   max-height: 100%;	
   padding-bottom: 2%
 }
-#form {
-  width : 45%;
-  margin: 2.5% auto 5% auto;
+.form {
+  width : 40%;
+  margin: 2.5% auto 2% auto;
   color: #f4f4f4;
-  font-variant: small-caps;  
+  font-variant: small-caps;
+ 
+  
 }
 
-input, label, textarea {
-  font-family: 'Ubuntu', sans-serif;
-  padding-left: 3%
-}
-
-#form input[type="text"], input[type="email"], input[type="tel"]{
-  height: 2.7em;
-  margin-bottom:0.800em;
-  width:100%;
-  border:0;
-  border-radius:0;
-  -moz-border-radius:0;
-  -webkit-border-radius:0;
-  box-shadow:none;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  background-color: rgba(203,199,200, 0.5);
-  color:#f4f4f4;
-  font-size: 100%;
-}
-#form input[type="text"] placeholder{
-  color:#ffffff;
-}
-textarea{
-  height:auto;
-  overflow:auto;
-  background-color: rgba(203,199,200, 0.5);
-  border:none;
-  border-radius:0;
-  -moz-border-radius:0;
-  -webkit-border-radius:0;
-  box-shadow:none;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  margin:0;
-  width:100%;
-  color:#f4f4f4;
-  font-size:100%;
-}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #ffffff;
-}
-input:-moz-placeholder, textarea:-moz-placeholder{
-  color: #ffffff;
-}
-input.placeholder, textarea.placeholder {
-    color: #555;
-  }
-
-.boutons {
-  width: 100%;
-  margin : auto;
-  text-align: center;
-}
-
-.btnSubmit, .btnReset {
-  background: url("../img/Pattern_btn_normal.jpg");
-  width: 20%;
-  line-height: 200%;
-  color: #ffffff;
-  text-decoration: none;
-  border: none;
-  font-family: 'Finger Paint', cursive;
-  font-variant: small-caps; 
+.form label {
   font-size: 125%;
+  margin : 0% 10% 0 0;
 }
 
-.btnSubmit:hover, .btnReset:hover {
-  background: url("../img/Pattern_btn_survol.jpg");
+.bouton {
+  display:block;
+  width: 25%;
+  line-height:20%;
+  text-align:center;
+  vertical-align:middle;
+  background: url(img/bouton_normal.png) no-repeat fixed;
+  color:white;
+  text-decoration:none;
 }
 
-.maps {
+.bouton a:hover {
+  background:url(img/bouton_survol.png) no-repeat fixed;
+}
+
+
+.maps{
+  width : 60%;
   display: block;
-  margin: auto;  
+  margin: 2% auto 0 auto;
+
 }
 
 /* ----------------------------- */
@@ -502,37 +450,7 @@ input.placeholder, textarea.placeholder {
 footer {
   background: url("../img/Pattern06.jpg") repeat fixed;
 }
-.rights {
+footer p {
   text-align: center;
 }
-
-.mentions {
-  width : 100%;
-  text-align: center;  
-}
-
-.mentions li {
-  display : inline-block;   
-}
-
-.mentions li a {
-  color : #252324;
-}
-
-.social-links {
-  width: 100%;
-  text-align: center;
-  padding: 1.5% 0 2% 0;
-}
-
-.social-links li {
-  display : inline-block;   
-}
-
-
-
-
-
-
-
 
