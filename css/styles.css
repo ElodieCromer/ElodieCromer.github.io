@@ -497,6 +497,16 @@ input.placeholder, textarea.placeholder {
 }
 
 /* ----------------------------- */
+/* RETOUR VERS LE HAUT DE LA PAGE */
+/* ----------------------------- */
+div#haut-page img { 
+  border:0; 
+  position:fixed; 
+  top:75%; 
+  right:20px; 
+}
+
+/* ----------------------------- */
 /* FOOTER */
 /* ----------------------------- */
 footer {
