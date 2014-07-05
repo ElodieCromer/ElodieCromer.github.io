@@ -151,8 +151,8 @@ footer {
 .main{
   width: 100%;
 }
- h3{
-   font-size: 2.7em;
+ h2{
+   font-size: 270%;
    color: #dc2961;
    text-align: center;
    margin : 0 0 0 1%;
@@ -160,7 +160,7 @@ footer {
  }
 
  h4 {
-   font-size: 1.675em;
+   font-size: 180%;
    color: #f4f4f4;
    margin : 0.5% 0 0.5% 7%;
  }
@@ -168,14 +168,6 @@ footer {
  a {
   text-decoration: none;
    }
-
-@media screen and (max-width: 498px) {
-  h3 {font-size: 1.875em;}
-  h4 {font-size: 1.475em;}
-  p {font-size: 0.875em;}
-
-
-}   
 
 /* ----------------------------- */
 /* HEADER */
@@ -263,56 +255,18 @@ footer {
 }
 
 @media screen and (max-width: 622px) {
+
+  
   .logo {   
     width: 100%;
  }
   .logo a img {
     display : block;
     margin: 5% auto 5% auto;
-    width: 50%;
+    max-width: 50%;
 }
 
-  .main-navigation {
-    width: 100%;
-  }
 
-  
-  .trigger {
-    display:block; 
-    cursor:pointer;
-    color:#fff;
-    padding:10px;
-    font-size:0.98em;
-    font-weight:bold;
-    background: url('../img/responsive-menu-icon.png') 50% 50% no-repeat; 
-  }
-
-  .main-navigation ul {
-    width: 100%;
-    padding: 0;
-    margin : 0 0 0 0;
-  }
-
-  .main-navigation li {
-    display: block;
-    width: 100%;
-    margin: 0 ;
-    font-size: 100%;      
-  }
-
-  .main-navigation li:hover {background-color: #dc2961;}
-  .main-navigation li a:hover {color: #f4f4f4;}
-
-    
-  .main-navigation li a { 
-    display : block;   
-    float: none;
-    margin: 0;
-  }
-
-  .main-navigation a {
-    text-align: center;
-  }
 }
  
 
@@ -513,11 +467,6 @@ footer {
   font-style: italic;
 }
 
-@media screen and (max-width: 496px) {
-.parcours p {font-size: 0.875em;}
-
-}
-
 
 
 /* ----------------------------- */
@@ -594,8 +543,7 @@ input.placeholder, textarea.placeholder {
 
 .btnSubmit, .btnReset {
   background: url("../img/Pattern_btn_normal.jpg");
-  width: 5em;
-  margin: 1%;
+  width: 20%;
   line-height: 200%;
   color: #ffffff;
   text-decoration: none;
@@ -621,7 +569,7 @@ div#haut-page img {
   border:0; 
   position:fixed; 
   top:75%; 
-  right:1.5%; 
+  right:20px; 
 }
 
 @media screen and (max-width: 622px) {
