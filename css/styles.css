@@ -174,25 +174,31 @@ footer {
 /* ----------------------------- */
 .heading {
    overflow: hidden;
-   background-color: #f4f4fc;
+   background-color: #e5e5e5;
    width: 100%;
 
 }
 .logo {
    float: left;
-   width: 30%;
+   width: 40%;
 }
 .logo a img{
    margin: 5%;
    max-width: 100%;
 }
+
 .main-navigation {
    float: right;
-   width: 70%
+   width: 60%
 }
+
+.main-navigation ul {
+  padding-left: 7em;
+}
+
 .main-navigation li{
   padding: 2%;
-  margin: 1.5% 0 0 2.5%;
+  margin: 3.5% 0 0 2.5%;
   display: inline-block;
   font-size: 175%;
 }
@@ -201,14 +207,68 @@ footer {
    float: right;
 }
 
+@media screen and (max-width: 1300px) {
+  .main-navigation li {
+    font-size: 150%;
+  }
+}
 
+@media screen and (max-width: 1146px) {
+  .logo a img{
+     max-width: 80%;
+}
+
+  .main-navigation li {
+    font-size: 130%;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .main-navigation li {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 962px) {
+  .main-navigation li {
+    font-size: 100%;
+    margin: 4.5% 0 0 2.5%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .main-navigation li {
+    font-size: 80%;
+    margin: 5.5% 0 0 2.5%;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .main-navigation li {
+    font-size: 65%;
+    margin: 6.5% 0 0 2.5%;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .logo {   
+    width: 100%;
+ }
+  .logo a img {
+    display : block;
+    margin: 5% auto 5% auto;
+    max-width: 50%;
+}
+
+
+}
  
 
 
 
-/* ----------------------------- */
+/* ----------------------------------------------------------------------------------- */
 /* PAGE 1 - SLIDER (une partie de celui-ci a été élaboré par BluePrint - Slider Jquery)*/
-/* ----------------------------- */
+/* ----------------------------------------------------------------------------------- */
 
 #slide1 {
 	margin: 0 auto;
@@ -505,6 +565,13 @@ div#haut-page img {
   top:75%; 
   right:20px; 
 }
+
+@media screen and (max-width: 622px) {
+  div#haut-page img { 
+    top:90%; 
+  
+}
+  }
 
 /* ----------------------------- */
 /* FOOTER */
