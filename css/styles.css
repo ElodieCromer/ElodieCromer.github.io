@@ -173,9 +173,14 @@ footer {
   h3 {font-size: 1.875em;}
   h4 {font-size: 1.475em;}
   p {font-size: 0.875em;}
-
-
 }   
+
+@media screen and (max-width: 299px) {
+  h3 {font-size: 1.275em;}
+  h4 {font-size: 1.075em;}
+  p {font-size: 0.575em;}
+
+}
 
 /* ----------------------------- */
 /* HEADER */
@@ -423,6 +428,18 @@ footer {
   transition: box-shadow 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 370px) {
+  .slider nav span {
+    background: none;
+    color: #dc2961;
+    font-size: 170%;  
+}
+  .slider nav span:hover {
+    background: none;
+    font-size: 250%;
+}
+}
+
 /* ----------------------------- */
 /* PAGE 2 */
 /* ----------------------------- */
@@ -440,13 +457,31 @@ footer {
   float:left;    
 }
 
-.rea-web img {
-  border: 1px solid #ffffff; 
+.rea-web img, .rea-graphisme img {
+  border: 5px solid #4b4b4b; 
   display: block;
   margin: auto;
 }
 
-.rea-web p {
+.effect {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.effect:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+
+
+.rea-web p, .rea-graphisme p {
   padding-top: 2%;
   text-align: center;
   color : #f4f4fc;
@@ -461,18 +496,10 @@ footer {
   float:left;
 }
 
-.rea-graphisme img {
-  border: 1px solid #ffffff; 
-  display: block;
-  margin: auto;
+@media screen and (max-width: 299px) {
+  .rea-web p, .rea-graphisme p {
+    font-size: 50%;  
 }
-
-.rea-graphisme p {
-  padding-top: 2%;
-  text-align: center;
-  color : #f4f4fc;
-  font-size: 90%;
-  font-style: italic;
 }
 
 /* ----------------------------- */
@@ -513,9 +540,32 @@ footer {
   font-style: italic;
 }
 
+.competences p.commentaires {
+  color: #8b3951; 
+  font-size:70%;
+}
+
 @media screen and (max-width: 496px) {
 .parcours p {font-size: 0.875em;}
+}
 
+@media screen and (max-width: 299px) {
+  .parcours p {
+    width: 90%;
+    font-size: 70%;  
+  }
+  .competences p {
+    font-size: 60%;
+  }
+  .competences img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 60%;
+  }
+  .competences p.commentaires {
+  font-size:50%;
+  }
 }
 
 
@@ -531,7 +581,7 @@ footer {
   padding-bottom: 2%
 }
 #form {
-  width : 45%;
+  width : 70%;
   margin: 2.5% auto 5% auto;
   color: #f4f4f4;
   font-variant: small-caps;  
@@ -614,22 +664,38 @@ input.placeholder, textarea.placeholder {
   margin: auto;  
 }
 
+@media screen and (max-width: 299px) {
+  #form {
+  width : 85%;
+  font-size: 80%; 
+}
+}
+
 /* ----------------------------- */
 /* RETOUR VERS LE HAUT DE LA PAGE */
 /* ----------------------------- */
 div#haut-page img { 
-  border:0; 
-  position:fixed; 
-  top:75%; 
-  right:1.5%; 
+  border: 0; 
+  position: fixed; 
+  top: 90%; 
+  right: 1.5%;
+  width : 3%;
+  height: 6%; 
 }
 
 @media screen and (max-width: 622px) {
   div#haut-page img { 
-    top:90%; 
-  
-}
+    top:90%;   
   }
+}
+
+@media screen and (max-width: 299px) {
+  div#haut-page img { 
+    width : 7%;
+    height : 3%;
+    
+  }
+}
 
 /* ----------------------------- */
 /* FOOTER */
@@ -662,6 +728,10 @@ footer {
 
 .social-links li {
   display : inline-block;   
+}
+
+@media screen and (max-width: 299px) {
+  .mentions li {font-size: 70%;}
 }
 
 
